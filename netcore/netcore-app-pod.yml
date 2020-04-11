@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: netcore
-    image: mohanaveluk/aspcoreondocker
+    image: mohanaveluk/aspcoreondocker:v1.0
     resources:
       limits:
         memory: "128Mi"
