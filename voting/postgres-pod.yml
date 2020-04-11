@@ -9,7 +9,7 @@ metadata:
 spec: 
   containers: 
     - 
-      image: postgres:11.7
+      image: postgres:9.6.17-alpine
       name: postgres
       ports: 
         - 
