@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: netcore-app-pod
+spec:
+  selector:
+    name: netcore-app-pod
+    app: netcore-app
+  ports:
+  - port: 80
+    targetPort: 80

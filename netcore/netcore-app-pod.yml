@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: netcore-app-pod
+  labels:
+    name: netcore-app-pod
+    app: netcore-app
+spec:
+  containers:
+  - name: netcore
+    image: mohanaveluk/aspcoreondocker
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
