@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: netcore-app
-        image: mohanaveluk/aspcoreondocker:v1.0
+        image: mohanaveluk/aspcoreondocker
         resources:
           limits:
             memory: "128Mi"
