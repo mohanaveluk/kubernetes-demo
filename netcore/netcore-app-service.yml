@@ -6,7 +6,7 @@ spec:
   type: LoadBalancer
   selector:
     name: netcore-app-pod
-    app: netcore-app
+    app: netcore-application
   ports:
   - port: 80
     targetPort: 80
