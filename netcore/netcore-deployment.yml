@@ -5,7 +5,7 @@ metadata:
   labels:
     app: netcore-application
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       name: netcore-app-pod
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: netcore-app
-        image: mohanaveluk/aspcoreondocker
+        image: mohanaveluk/masalawebcore:1.2
         resources:
           limits:
             memory: "128Mi"

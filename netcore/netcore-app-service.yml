@@ -8,5 +8,5 @@ spec:
     name: netcore-app-pod
     app: netcore-app
   ports:
-  - port: 80
+  - port: 8090
     targetPort: 80
