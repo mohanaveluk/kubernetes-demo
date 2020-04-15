@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: netcore-app-deployment
+  name: node-app-deployment
   labels:
-    app: netcore-application
+    app: node-application
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: netcore-app-pod
-      app: netcore-application
+      name: node-app-pod
+      app: node-application
   template:
     metadata:
-      name: netcore-app-pod
+      name: node-app-pod
       labels:
-        name: netcore-app-pod
-        app: netcore-application
+        name: node-app-pod
+        app: node-application
     spec:
       containers:
-      - name: netcore-app
-        image: mohanaveluk/masalawebcore:1.2
+      - name: node-app
+        image: mohanaveluk/	memberapp-ex:1.0
         resources:
           limits:
             memory: "128Mi"
